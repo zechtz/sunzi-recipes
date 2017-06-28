@@ -2,13 +2,13 @@
 # Dynamic variables here will be compiled to individual files in compiled/attributes.
 attributes:
   environment: production
-  ruby_version: 2.1.2 #you can change this 
+  ruby_version: 2.1.2 #you can change this
   postgres_version: 9.3 #to find config file to update, please make sure this matches your postgres version
   postgres_user: 'postgresuser'
-  postgres_database: 'databasename' 
+  postgres_database: 'databasename'
   postgres_password: 'password'
-  deploy_user: 'deployusername' 
-  app_name: 'appname' 
+  deploy_user: 'deployusername'
+  app_name: 'appname'
 
 # Remote recipes here will be downloaded to compiled/recipes.
 recipes:
