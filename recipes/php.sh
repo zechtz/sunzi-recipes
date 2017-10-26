@@ -11,13 +11,8 @@ if ! sunzi.installed "nginx"; then
   sunzi.install "nginx"
 fi
 
-if ! sunzi.installed "php5-common"; then
-  sunzi.mute "apt-get install -qqy php5 php5-common php5-apc php5-gd php5-fpm php5-cli"
-  if sunzi.installed "mysql-server-5.6"; then
-    if ! sunzi.installed "php5-mysql"; then
-      sunzi.install "php5-mysql"
-    fi
-  fi
+if ! sunzi.installed "php5.6-common"; then
+  sunzi.mute "apt-get install -qqy php5.6 php5.6-common php5.6-apc php5.6-gd php5.6-fpm php5.6-cli"
   echo "PHP5-FPM configuration setup.."
   cnf="php.cnf"
   targetfile=${cnfdir}${cnf}

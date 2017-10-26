@@ -16,21 +16,9 @@ export DEBIAN_FRONTEND=noninteractive
 sunzi.mute "apt update"
 sunzi.mute "apt-get -y upgrade"
 
-# Set RAILS_ENV
-environment=<%= @attributes.environment %>
-
-if ! grep -Fq "RAILS_ENV" ~/.bash_profile; then
-  echo 'Setting up RAILS_ENV...'
-  echo "export RAILS_ENV=$environment" >> ~/.bash_profile
-  source ~/.bash_profile
-  echo 'gem: --no-ri --no-rdoc' > ~/.gemrc
-fi
-
 source recipes/build-essential.sh
 source recipes/git.sh
-source recipes/rbenv.sh <%= @attributes.ruby_version %>
 source recipes/nginx.sh
-source recipes/php.sh
 source recipes/nodejs.sh
 source recipes/postgres.sh
 source recipes/adduser.sh
