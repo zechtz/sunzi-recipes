@@ -9,6 +9,5 @@ else
  	ufw --force enable
  	ufw allow ssh
  	ufw allow http
- 	#uncomment the following line to allow https connections
- 	#ufw allow https
+ 	ufw allow https
 fi
