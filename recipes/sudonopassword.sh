@@ -6,7 +6,7 @@
 if [ -e /etc/sudoers.d/deploy ]; then
   echo "sudo already set, skipping."
 else
-	mv files/nopassword_config /etc/sudoers.d/deploy
-	chown root:root /etc/sudoers.d/deploy
-	chmod 0440 /etc/sudoers.d/deploy
+	mv files/nopassword_config /etc/sudoers.d/<%=@attributes.deploy_user%>
+	chown root:root /etc/sudoers.d/<%= @attributes.deploy_user %>
+	chmod 0440 /etc/sudoers.d/<%= @attributes.deploy_user %>
 fi
