@@ -3,12 +3,12 @@
 attributes:
   environment: production
   ruby_version: 2.1.2 #you can change this
-  postgres_version: 9.5 #to find config file to update, please make sure this matches your postgres version
-  postgres_user: 'ffars'
-  postgres_database: 'ffars_live'
-  postgres_password: 'theApiIsRockingTheDB'
-  deploy_user: 'deploy'
-  app_name: 'ffars'
+  postgres_version: 9.6 #to find config file to update, please make sure this matches your postgres version
+  postgres_user: 'postgres-username'
+  postgres_database: 'postgres-database'
+  postgres_password: 'postgresloginpassword'
+  deploy_user: 'deploy_username'
+  app_name: 'appname'
 
 # Remote recipes here will be downloaded to compiled/recipes.
 recipes:
