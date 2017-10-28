@@ -20,8 +20,9 @@ source recipes/build-essential.sh
 source recipes/git.sh
 source recipes/nginx.sh
 source recipes/nodejs.sh
+source recipes/php.sh
 source recipes/postgres.sh
+source roles/db.sh
 source recipes/adduser.sh
 source recipes/ufw.sh
 source recipes/sudonopassword.sh
-# source recipes/set_env_vars.sh
