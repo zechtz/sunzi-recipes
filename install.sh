@@ -27,5 +27,5 @@ source recipes/adduser.sh
 source recipes/ufw.sh
 source recipes/sudonopassword.sh
 source recipes/install-composer.sh
-source recipes/folders.sh
+source recipes/folder-permissions.sh
 source recipes/fin.sh
