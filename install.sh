@@ -22,7 +22,10 @@ source recipes/nginx.sh
 source recipes/nodejs.sh
 source recipes/php.sh
 source recipes/postgres.sh
-source roles/db.sh
+source recipes/redis.sh
 source recipes/adduser.sh
 source recipes/ufw.sh
 source recipes/sudonopassword.sh
+source recipes/install-composer.sh
+source recipes/folders.sh
+source recipes/fin.sh
