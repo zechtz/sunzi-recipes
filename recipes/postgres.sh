@@ -1,6 +1,6 @@
 # postgresql
 
-if aptitude search '~i ^postgresql$' | grep -q postgresql; then
+if aptitude search '~i ^postgresql-<%=@attributes.postgres_version%>$' | grep -q postgresql; then
   echo "postgresql already installed, skipping."
 else
   echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list

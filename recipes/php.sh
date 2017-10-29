@@ -1,4 +1,4 @@
-if aptitude search '~i ^php$' | grep -q nodejs; then
+if aptitude search '~i ^php5.6$' | grep -q php; then
   echo "php already installed, skipping."
 else
   apt-get install python-software-properties --yes
