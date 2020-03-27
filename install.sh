@@ -30,4 +30,3 @@ source recipes/sudonopassword.sh
 source recipes/install-composer.sh
 source recipes/folder-permissions.sh
 source recipes/install_phantomjs.sh
-source recipes/fin.sh

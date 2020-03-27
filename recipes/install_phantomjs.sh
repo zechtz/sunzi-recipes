@@ -13,3 +13,5 @@ ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/share/phantomjs
 ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin/phantomjs
 ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/bin/phantomjs
 rm -fr $PHANTOM_JS.tar.bz2
+
+echo "Finished setting up the server using Sunzi"
