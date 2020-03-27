@@ -7,7 +7,7 @@ Set up root user in your server and make sure you add your ssh key so that root 
 ```sunzi compile```
 
 ## Deploy and Install 
-```sh sunzi deploy your_ip-address/domain-name```
+```sunzi deploy your_ip-address/domain-name```
 
 Sunzi will copy the compiled files into your server and run the install.sh script
 
