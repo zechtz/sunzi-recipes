@@ -13,19 +13,21 @@ export DEBIAN_FRONTEND=noninteractive
 # source recipes/backports.sh
 
 # Update apt catalog and upgrade installed packages
-sunzi.mute "apt update"
+sunzi.mute "apt-get update"
 sunzi.mute "apt-get -y upgrade"
 
 source recipes/build-essential.sh
 source recipes/git.sh
 source recipes/nginx.sh
+source recipes/set_permission.sh
 source recipes/nodejs.sh
-source recipes/php.sh
-source recipes/postgres.sh
+source recipes/install_php.sh
+#source recipes/postgres.sh
 source recipes/redis.sh
 source recipes/adduser.sh
 source recipes/ufw.sh
 source recipes/sudonopassword.sh
 source recipes/install-composer.sh
 source recipes/folder-permissions.sh
+source recipes/install_phantomjs.sh
 source recipes/fin.sh

@@ -1,12 +1,10 @@
-#add deploy user
-
-if [ -d /home/<%= @attributes.deploy_user %> ]; then
+# add deploy user
+if [ -d /home/<%= @vars.deploy_user %> ]; then
   echo "User already created skipping"
 else
-  useradd <%= @attributes.deploy_user %> -m -s /bin/bash
-  mkdir -p /home/<%= @attributes.deploy_user %>/.ssh
-  mv files/deploy_key /home/<%= @attributes.deploy_user %>/.ssh/authorized_keys
-  chown -R <%= @attributes.deploy_user %>:<%= @attributes.deploy_user %> /home/<%= @attributes.deploy_user %>/.ssh
-  #chown <%= @attributes.deploy_user %>:<%= @attributes.deploy_user %> /etc/nginx/sites-available/<%=@attributes.app_name%>
-  chmod 400 /home/<%= @attributes.deploy_user %>/.ssh/authorized_keys
+  sudo useradd <%= @vars.deploy_user %> -m -s /bin/bash
+  mkdir -p /home/<%= @vars.deploy_user %>/.ssh
+  mv files/deploy_key.sample /home/<%= @vars.deploy_user %>/.ssh/authorized_keys
+  sudo chown -R <%= @vars.deploy_user %>:<%= @vars.deploy_user %> /home/<%= @vars.deploy_user %>/.ssh
+  sudo chmod 400 /home/<%= @vars.deploy_user %>/.ssh/authorized_keys
 fi

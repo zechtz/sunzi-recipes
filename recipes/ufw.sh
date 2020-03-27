@@ -1,7 +1,5 @@
 #setup ufw
-
 #ufw installed by nginx dependency
-
 if ufw status | grep -q 'Status: active'; then
   echo "ufw already configured, skipping."
 else
