@@ -7,4 +7,3 @@ fi
 
 echo "Changing ownership for www directory"
 chown -R <%= @vars.deploy_user %>:<%= @vars.deploy_user %> /var/www/
-
