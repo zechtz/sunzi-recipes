@@ -1,7 +1,9 @@
 # Seamlessly provision your sever using these recipes
 
 ## Getting started
-You must first have ruby installed in your machine, then install the sunzi gem by running the following command
+First you must rename the sunzi.sample.yml file to sunzi.yml
+
+Then make sure you have ruby installed in your machine, then install the sunzi gem by running the following command
 
 ```gem install sunzi```
 

@@ -1,14 +1,13 @@
 ---
 # Dynamic variables here will be compiled to individual files in compiled/attributes.
-attributes:
-  environment: production
-  ruby_version: 2.1.2 #you can change this
-  postgres_version: 9.6 #to find config file to update, please make sure this matches your postgres version
-  postgres_user: 'postgres-username'
-  postgres_database: 'postgres-database'
-  postgres_password: 'postgresloginpassword'
-  deploy_user: 'deploy_username'
-  app_name: 'appname'
+vars:
+  deploy_user: 'deploy'
+  admin_user: 'maliasili'
+  app_name: 'portal'
+  distro: bionic
+  postgres_user: 'postgres_user'
+  postgres_password: 'postgres_password'
+  postgres_database: 'postgres_database'
 
 # Remote recipes here will be downloaded to compiled/recipes.
 recipes:
