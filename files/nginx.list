@@ -1,2 +1,0 @@
-deb [arch=amd64] http://nginx.org/packages/mainline/ubuntu/ <%=@vars.distro %> nginx
-deb-src http://nginx.org/packages/mainline/ubuntu/ <%=@vars.distro %> nginx
