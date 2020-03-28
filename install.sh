@@ -18,4 +18,5 @@ sunzi.mute "apt-get -y upgrade"
 
 source recipes/build-essential.sh
 source recipes/postgres.sh
+source recipes/adduser.sh
 source recipes/fin.sh
