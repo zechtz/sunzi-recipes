@@ -16,10 +16,13 @@ else
   fi
 
   #enable password authentication
+  /etc/init.d/postgresql restart
+
   mv files/pg_hba.sample.conf /etc/postgresql/<%= @vars.postgres_version %>/main/pg_hba.conf
   chown postgres:postgres /etc/postgresql/<%= @vars.postgres_version %>/main/pg_hba.conf
   chmod 640 /etc/postgresql/<%= @vars.postgres_version %>/main/pg_hba.conf
-  sudo service postgresql restart
+
+  /etc/init.d/postgresql restart
 
   #create user and database
   sudo -u postgres psql -c "create user <%= @vars.postgres_user %> with password '<%= @vars.postgres_password %>';"
