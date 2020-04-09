@@ -31,16 +31,4 @@ else
   else
     mv files/nginx.sample.conf /etc/nginx/conf.d/<%= @vars.app_name %>.conf
   fi
-
-  if [ -f "/etc/nginx/fastcgi.conf" ]; then
-    echo "fastcgi.conf already exists"
-  else
-    mv files/fastcgi.conf /etc/nginx
-  fi
-
-  if [ -f "/etc/nginx/snippets/fastcgi-php.conf" ]; then
-    echo "fastcgi-php.conf already exists"
-  else
-    mv files/fastcgi-php.conf /etc/nginx/snippets
-  fi
 fi

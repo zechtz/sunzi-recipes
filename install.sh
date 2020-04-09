@@ -16,7 +16,6 @@ export DEBIAN_FRONTEND=noninteractive
 sunzi.mute "apt-get update"
 sunzi.mute "apt-get -y upgrade"
 
-source recipes/build-essential.sh
-source recipes/git.sh
 source recipes/nginx.sh
+source recipes/ufw.sh
 source recipes/fin.sh
